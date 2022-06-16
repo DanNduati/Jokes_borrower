@@ -10,15 +10,19 @@ The JokeBorrower as the name suggests ~~steals~~ cough I mean `sources` for joke
 ## <b>Setup</b>
 ### <b>Clone repository</b>
 ```bash
-$ git clone 
+$ git clone https://github.com/DanNduati/Jokes_borrower.git
 ```
 ### <b>Install dependencies</b>
-If you have [pipenv](https://pipenv.pypa.io/) installed you can just run:
+If you have [pipenv](https://pipenv.pypa.io/) installed you can just run pipenv automatically creates a virtual environment for you:
 ```bash
 $ pipenv install
 ```
-Otherwise you can use:
+Otherwise you can use the good ol' requirements.txt file:
 ```bash
+# create virtualenvironment and activate it
+$ python -m venv venv
+$ source venv/bin/activate
+# install dependencies
 $ pip install -r requirements.txt
 ```
 ## <b>Usage</b>
