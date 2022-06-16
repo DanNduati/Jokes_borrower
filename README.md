@@ -22,6 +22,16 @@ Otherwise you can use:
 $ pip install -r requirements.txt
 ```
 ## <b>Usage</b>
-
+```bash
+$ python main.py 
+100 jokes borrowed successfully in 1.018240594863892 seconds
+```
+100 requests and DB writes in about 1 second! How:
+## <b>Built with</b>
+- [aiohttp](https://docs.aiohttp.org/en/stable/) - an asynchronous HTTP Client/Server 
+- [Tortoise orm](https://tortoise-orm.readthedocs.io/en/latest/index.html) - an asyncio ORM
+ 
+## <b>Credit</b>
+JokesBorrower sources it jokes from this [API](https://rapidapi.com/Sv443/api/jokeapi-v2/) created by [Sven Fehler](https://github.com/Sv443)
 ## <b>License</b>
 [![license](https://img.shields.io/badge/License-Beerware-yellowgreen)](LICENSE)
