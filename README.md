@@ -30,8 +30,13 @@ $ python main.py
 ## <b>Built with</b>
 - [aiohttp](https://docs.aiohttp.org/en/stable/) - an asynchronous HTTP Client/Server 
 - [Tortoise orm](https://tortoise-orm.readthedocs.io/en/latest/index.html) - an asyncio ORM
- 
+
 ## <b>Credit</b>
 JokesBorrower sources it jokes from this [API](https://rapidapi.com/Sv443/api/jokeapi-v2/) created by [Sven Fehler](https://github.com/Sv443)
+
+## <b>To do</b>
+- Throttle requests to avoid exceeding the request budget for rate limited APIs 
+- Add other joke sources/Apis
+
 ## <b>License</b>
 [![license](https://img.shields.io/badge/License-Beerware-yellowgreen)](LICENSE)
