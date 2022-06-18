@@ -26,11 +26,15 @@ $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
 ## <b>Usage</b>
+Run source.sh bash script
 ```bash
-$ python main.py 
-100 jokes borrowed successfully in 1.018240594863892 seconds
+$ sudo chmod +x source.sh
+$ ./source.sh
+62 jokes borrowed successfully in 34.831594467163086 seconds
+81 jokes borrowed successfully in 43.83061122894287 seconds
+76 jokes borrowed successfully in 41.592899322509766 seconds
 ```
-100 requests and DB writes in about 1 second! How:
+
 ## <b>Built with</b>
 - [aiohttp](https://docs.aiohttp.org/en/stable/) - an asynchronous HTTP Client/Server 
 - [Tortoise orm](https://tortoise-orm.readthedocs.io/en/latest/index.html) - an asyncio ORM
