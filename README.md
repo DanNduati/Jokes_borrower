@@ -27,14 +27,31 @@ $ pip install -r requirements.txt
 ```
 ## <b>Usage</b>
 Run source.sh bash script
+### Local sqlite database
+```bash
+$ ./source.sh 
+Borrowing initiated
+started borrowing at id 0
+62 jokes borrowed successfully in 1.219724178314209 seconds
+started borrowing at id 100
+81 jokes borrowed successfully in 2.874145269393921 seconds
+started borrowing at id 200
+76 jokes borrowed successfully in 1.8248345851898193 seconds
+All done
+```
+### Free tier hobby postgres instance
 ```bash
 $ sudo chmod +x source.sh
 $ ./source.sh
+Borrowing initiated
+started borrowing at id 0
 62 jokes borrowed successfully in 34.831594467163086 seconds
+started borrowing at id 100
 81 jokes borrowed successfully in 43.83061122894287 seconds
+started borrowing at id 200
 76 jokes borrowed successfully in 41.592899322509766 seconds
 ```
-
+> For [obvious reasons](https://sj14.gitlab.io/post/2018/12-22-dbbench/) writing to the local sqlite database is significantly faster that writing to the free tier postgres database instance 
 ## <b>Built with</b>
 - [aiohttp](https://docs.aiohttp.org/en/stable/) - an asynchronous HTTP Client/Server 
 - [Tortoise orm](https://tortoise-orm.readthedocs.io/en/latest/index.html) - an asyncio ORM
