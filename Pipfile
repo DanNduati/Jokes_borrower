@@ -13,6 +13,8 @@ requests = "*"
 tortoise-orm = "*"
 pydantic = "*"
 aerich = "*"
+python-dotenv = "*"
+asyncpg = "*"
 
 [dev-packages]
 
