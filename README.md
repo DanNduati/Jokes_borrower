@@ -50,6 +50,7 @@ started borrowing at id 100
 81 jokes borrowed successfully in 43.83061122894287 seconds
 started borrowing at id 200
 76 jokes borrowed successfully in 41.592899322509766 seconds
+All done
 ```
 > For [obvious reasons](https://sj14.gitlab.io/post/2018/12-22-dbbench/) writing to the local sqlite database is significantly faster that writing to the free tier postgres database instance 
 ## <b>Built with</b>
@@ -60,8 +61,8 @@ started borrowing at id 200
 JokesBorrower sources it jokes from this [API](https://rapidapi.com/Sv443/api/jokeapi-v2/) created by [Sven Fehler](https://github.com/Sv443)
 
 ## <b>To do</b>
-- Throttle requests to avoid exceeding the request budget for rate limited APIs 
-- Add other joke sources/Apis
+- [x] Throttle requests to avoid exceeding the request budget for rate limited APIs 
+- [ ] Add other joke sources/Apis
 
 ## <b>License</b>
 [![license](https://img.shields.io/badge/License-Beerware-yellowgreen)](LICENSE)
