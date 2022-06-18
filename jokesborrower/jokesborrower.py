@@ -1,5 +1,4 @@
 import asyncio
-from typing import List
 
 import aiohttp
 
@@ -19,8 +18,8 @@ class JokesBorrower(object):
         Args:
             url (str): API base url
             rate_limit (int, optional): The rate limit if any for the api. Defaults to None.
-            jokes_category (List, optional): Categories of jokes you want. Defaults to ["Any"]
             jokes_count (int, optional): The number of jokes you want. Defaults to 100.
+            start_id (int, optional): Start id for the ID Range query parameter. Defaults to 0
         """
         self.jokes_category = ["Any"]
         self.url = (
@@ -45,8 +44,8 @@ class JokesBorrower(object):
             for i in range(self.jokes_count):
                 self.tasks.append(asyncio.ensure_future(self.get_joke(session, i)))
             self.jokes = await asyncio.gather(*self.tasks)
-        print(self.jokes)
-        print(len(self.jokes))
+        # print(self.jokes)
+        # print(len(self.jokes))
         return self.jokes
 
     async def store_jokes(self, jokes):

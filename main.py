@@ -31,7 +31,9 @@ async def main():
         url="https://v2.jokeapi.dev/joke/", jokes_count=100, start_id=start_id
     )
     jokes_num: int = await jk.borrow_jokes()
-    print(f"{jokes_num} jokes borrowed successfully in {(time.time() - start_time)} seconds")
+    print(
+        f"{jokes_num} jokes borrowed successfully in {(time.time() - start_time)} seconds"
+    )
     logging.info(
         f"{jokes_num} jokes borrowed successfully in {(time.time() - start_time)} seconds"
     )
